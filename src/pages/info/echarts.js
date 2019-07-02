@@ -1,3 +1,11 @@
 import React from "react";
+class Echart extends React.Component{
 
-class e
+    render(){
+        return(
+            <h2>table</h2>
+        )
+    }
+}
+
+export default Echart
