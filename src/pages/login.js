@@ -4,8 +4,6 @@ import "../styles/login.css";
 
 class Login extends React.Component {
   render() {
-    console.log(this);
-    
     return (
       <div className="login_container">
         <Card title="欢迎进入 Datia 管理系统" extra={<a href="#">注册账号</a>} style={{ width: 500 }}>

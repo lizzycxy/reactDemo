@@ -1,11 +1,12 @@
 import React from "react";
-class Echart extends React.Component{
+import LineMarkerEcharts from "../../component/echart";
 
-    render(){
+class Echarts extends React.Component{
+    render() {
         return(
-            <h2>table</h2>
+            <LineMarkerEcharts />
         )
     }
 }
 
-export default Echart
+export default Echarts;

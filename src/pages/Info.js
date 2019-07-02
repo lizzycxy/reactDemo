@@ -2,6 +2,7 @@ import React from "react";
 import { Layout, Menu, Icon } from 'antd';
 import { Link } from "react-router-dom";
 import InfoRouter from "../router/InfoRouter";
+import { getDataToSession } from "../utils";
 
 const { Header, Sider, Content } = Layout;
 const { SubMenu } = Menu;
@@ -15,7 +16,9 @@ class Info extends React.Component {
             collapsed: !this.state.collapsed,
         });
     };
-
+    componentDidMount(){
+        getDataToSession();
+    }
     render() {
         return (
             <div>
