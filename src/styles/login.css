@@ -1,0 +1,15 @@
+.login_container{
+  position: fixed;
+  top: 100px;
+  left:35%;
+}
+.login_inoputItem{
+  margin: auto;
+  margin-top: 20px;
+  width: 300px;
+}
+.login_buttonItem{
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+}
