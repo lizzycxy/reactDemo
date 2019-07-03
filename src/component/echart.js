@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactEcharts from 'echarts-for-react';
-import { getEchartOption } from "../echrats/echartOptin";
+import { getEchartOption } from "../data/echartOption";
 
 class LineMarkerEcharts extends React.Component {
     render() {

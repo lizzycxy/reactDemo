@@ -8,7 +8,7 @@ export function getDataToSession() {
             let setInfo = JSON.stringify(res.data.list)
             sessionStorage.setItem('weatherData', setInfo)
         }).catch(err => {
-            reject(err.data);
+            reject(err);
         })
     });
 }
@@ -17,8 +17,8 @@ export function getDataFromSession() {
     return JSON.parse(sessionStorage.getItem('weatherData'))
 }
 
-// 截取部分数据
-export function handleData(key, data) {
+// 为 Echarts 截取部分数据
+export function handleDataToEcharts(key, data) {
     const container = [];
     switch (key) {
         case "name": {
@@ -35,6 +35,24 @@ export function handleData(key, data) {
         }
     }
 }
+
+// table 展示数据
+export function handleDataToTable() {
+    const weatherData = getDataFromSession();
+    const container = [];
+    weatherData.forEach(item => {
+        container.push({
+            key:item.id,
+            name: item.name,
+            clouds: item.clouds.all,
+            coord: JSON.stringify(item.coord),
+            main: JSON.stringify(item.main),
+            wind: JSON.stringify(item.wind)
+        })
+    })
+    return container;
+}
+
 
 
 

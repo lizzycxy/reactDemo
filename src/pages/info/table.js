@@ -1,9 +1,9 @@
 import React from "react";
-
+import TableItem from "../../component/tableItem";
 class Table extends React.Component{
     render(){
         return(
-            <h2>table</h2>
+            <TableItem />
         )
     }
 }
