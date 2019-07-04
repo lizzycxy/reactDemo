@@ -1,0 +1,8 @@
+.content {
+    height: 160px;
+    overflow: auto;
+}
+.completed{
+    color:red;
+    text-decoration: line-through;
+}

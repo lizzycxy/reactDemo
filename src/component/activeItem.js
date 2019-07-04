@@ -43,7 +43,7 @@ class ActiveItem extends React.Component {
                         </div>
                     }
                 >
-                    <Meta title={this.props.weather.name} description={`Get More Weathner Infomatin By Click the Picture`} />
+                    <Meta title={this.props.weather.name} description={`Get More Weather Information By Click the Picture`} />
                 </Card>,
             </div>
         )
